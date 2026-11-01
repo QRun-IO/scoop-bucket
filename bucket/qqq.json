@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/QRun-IO/qqq-cli/releases/download/cli-v1.0.0/qqq-windows-x64.exe",
-            "hash": "REPLACED_FROM_SHA256SUMS"
+            "hash": "0000000000000000000000000000000000000000000000000000000000000000"
         }
     },
     "bin": [
