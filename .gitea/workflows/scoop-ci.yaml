@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  test:
+    if: github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.base.repo.full_name == github.repository)
+    uses: self:KofTwentyTwo/platform-ci/.gitea/workflows/scoop-ci.yaml@qrun-release-v1
